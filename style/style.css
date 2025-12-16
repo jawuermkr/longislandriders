@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #fff !important;
+  min-height: 100vh;
+  background-color: #202020 !important;
+}
+
+/* ===== SECCIÓN HERO ===== */
+.section-bg {
+  width: 100%;
+  height: 100vh;
+  /* solo esta sección */
+  background-image: url("../img/fondo2.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.form-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+  color: white;
+}
+
+form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+/* ===== SECCIONES SIGUIENTES ===== */
+.section {
+  padding: 80px 10%;
+}
+
+.section.light {
+  background: #f4f4f4;
+}
+
+.section.dark {
+  background: #222;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-container {
+    width: 100%;
+  }
+}
+
+/* ===============================
+   CARRUSEL AISLADO (NO INVASIVO)
+   =============================== */
+
+.jc-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+/* Track */
+.jc-carousel .jc-carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Slide */
+.jc-carousel .jc-slide {
+  min-width: 100%;
+  text-align: center;
+}
+
+/* Imagen */
+.jc-carousel .jc-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Descripción */
+.jc-carousel .jc-caption {
+  background: #111;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* ===============================
+   BOTONES 100% BLINDADOS
+   =============================== */
+
+.jc-carousel .jc-nav {
+  all: unset;
+  /* elimina estilos globales */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 100;
+  user-select: none;
+}
+
+.jc-carousel .jc-nav:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Posición lateral */
+.jc-carousel .jc-prev {
+  left: 15px;
+}
+
+.jc-carousel .jc-next {
+  right: 15px;
+}
