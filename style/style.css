@@ -1,15 +1,56 @@
+@font-face {
+  font-family: unua;
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+  font-family: dua;
+  src: url(../font/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
 body {
+  font-family: 'unua' !important;
   color: #fff !important;
   min-height: 100vh;
   background-color: #202020 !important;
 }
+
+h2 {
+  font-family: 'unua';
+}
+
+/* ===== BOTON FLOTANTE ===== */
+
+#jc-floating-quote-btn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform-origin: right center;
+
+  background-color: #a57225;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  cursor: pointer;
+
+  z-index: 9999;
+}
+
+#jc-floating-quote-btn:hover {
+  background-color: #8b5e1b;
+}
+
+
+/* ===== BOTON FLOTANTE FIN ===== */
 
 /* ===== SECCIÓN HERO ===== */
 .section-bg {
@@ -26,17 +67,18 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 50%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  margin: 60px 60px 0px 60px;
+  width: 36%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 form {
-  width: 80%;
-  color: white;
+  width: 90%;
+  color: rgb(0, 0, 0);
 }
 
 form h2 {
@@ -45,26 +87,28 @@ form h2 {
 }
 
 input,
-textarea {
+textarea, select {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
   border: none;
   border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3) !important;
 }
 
-button {
-  width: 100%;
+.btnSubmit {
+  margin: auto;
+  width: 96% !important;
   padding: 12px;
-  background: #ff9800;
+  background: #a57225 !important;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-button:hover {
-  background: #e68900;
+.btnSubmit:hover {
+  background: #8b5e1b;
 }
 
 /* ===== SECCIONES SIGUIENTES ===== */
@@ -82,9 +126,14 @@ button:hover {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .form-container {
     width: 100%;
+    height: 100%;
+    margin: 30px 0px 0px 0px;
+  }
+  form {
+    margin-top: auto;
   }
 }
 
@@ -94,9 +143,10 @@ button:hover {
 
 .jc-carousel {
   position: relative;
-  width: 100%;
+  width: 50%;
   max-width: 1200px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 /* Track */
@@ -114,15 +164,14 @@ button:hover {
 /* Imagen */
 .jc-carousel .jc-slide img {
   width: 100%;
-  height: 400px;
   object-fit: cover;
   display: block;
 }
 
 /* Descripción */
 .jc-carousel .jc-caption {
-  background: #111;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
   padding: 12px;
   font-size: 16px;
 }
