@@ -1,6 +1,4 @@
 <?php
-POST_start();
-ob_start();
 
 if(isset($_POST['btnSubmit'])){
 
@@ -18,12 +16,22 @@ $vehicle = $_POST['vehicle'];
 
 $roundTrip = $_POST['roundTrip'];
 
-
+$service_return = $_POST['service_return'];
+$pickup_return = $_POST['pickup_return'];
+$dropoff_return = $_POST['dropoff_return'];
+$date_return = $_POST['date_return'];
+$time_return = $_POST['time_return'];
+$name_return = $_POST['name_return'];
+$phone_return = $_POST['phone_return'];
+$mail_return = $_POST['mail_return'];
+$pasagers_return = $_POST['pasagers_return']; 
+$bags_return = $_POST['bags_return'];
+$vehicle_return = $_POST['vehicle_return'];
 
 // Desde aquí datos y cuerpo del mensaje //
 
 $asunto = "QUOTE FROM WEB";
-$correo = "verdaluno@gmail.com";
+$correo = "verdaluno@gmail.com, contact@longislandriders.com";
 $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 $headers .= "From: Long Island Riders <no-reply@longislandriders.com>\r\n";
@@ -65,7 +73,20 @@ $mensaje = "
               <p><strong>Number of passegers: </strong> $pasagers</p>
               <p><strong>Number of bags: </strong> $bags</p>
               <p><strong>Vehicle Type: </strong> $vehicle</p>
-
+<hr>
+              <p><strong>roundTrip: </strong> $roundTrip </p>
+<hr>
+              <p><strong>Service type Return: </strong> $service_return</p>
+              <p><strong>Pickup Location Return: </strong> $pickup_return</p>
+              <p><strong>Drop-off Location Return: </strong> $dropoff_return</p>
+              <p><strong>Date Return: </strong> $date_return</p>
+              <p><strong>Time Return: </strong> $time_return</p>
+              <p><strong>Passenger Name Return: </strong> $name_return</p>
+              <p><strong>Phone number Return: </strong> $phone_return</p>
+              <p><strong>Email addres Return: </strong> $mail_return</p>
+              <p><strong>Number of passegers Return: </strong> $pasagers_return</p>
+              <p><strong>Number of bags Return: </strong> $bags_return</p>
+              <p><strong>Vehicle Type Return: </strong> $vehicle_return</p>
             </td>
           </tr>
 
