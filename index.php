@@ -200,7 +200,7 @@
 
           
         </div>
-        <input class="btn btnSubmit form-control mt-3" type="submit" name="btnSubmit" value="GET A QUOTE NOW">
+        <input class="btn btnSubmit form-control" type="submit" name="btnSubmit" value="GET A QUOTE NOW">
 
         <div class="col-md-6 mt-3" id="switch-container" style="display:none;">
           <button type="button" id="switch-trip" class="btn btn-success white-text">
@@ -359,7 +359,7 @@
     const switchTrip = document.getElementById('switch-trip');
 
     roundTrip.addEventListener('change', function () {
-      if (this.value === 'yes') {
+      if (this.value === 'Yes') {
         tripOne.style.display = 'none';
         tripTwo.style.display = 'flex';
         switchBtn.style.display = 'block';

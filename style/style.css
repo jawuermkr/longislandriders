@@ -67,9 +67,9 @@ h2 {
   position: absolute;
   left: 0;
   top: 0;
-  margin: 60px 60px 0px 60px;
-  width: 36%;
-  height: 80%;
+  margin: 0px 60px 0px 60px;
+  width: 45%;
+  height: 100%;
   background: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
@@ -80,9 +80,9 @@ h2 {
   position: absolute;
   right: 0;
   top: 0;
-  margin: 60px 60px 0px 60px;
-  width: 36%;
-  height: 80%;
+  margin: 0px 60px 0px 60px;
+  width: 45%;
+  height: 100%;
   background: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
