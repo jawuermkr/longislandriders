@@ -24,12 +24,6 @@
     GET A QUOTE NOW
   </button>
 
-
-
-  <header class="p-2">
-    <img src="img/LOGO-BLANCO.png" alt="logo" width="210px">
-  </header>
-
   <div class="banner">
     <img src="img/fondo2.png" alt="banner" width="100%">
   </div>
@@ -96,7 +90,7 @@
                 <div class="col-md-6">
                   <label for="vehicle">Number of passegers</label>
                   <select class="form-control" id="vehicle" name="pasagers" required="">
-                    <option value="">Select Vehicle</option>
+                    <option value="">Select option</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -107,7 +101,7 @@
                 <div class="col-md-6">
                   <label for="vehicle">Number of bags</label>
                   <select class="form-control" id="vehicle" name="bags" required="">
-                    <option value="">Select Vehicle</option>
+                    <option value="">Select option</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -119,7 +113,7 @@
                 <div class="col-md-6">
                   <label for="vehicle">Vehicle Type</label>
                   <select class="form-control" id="vehicle" name="vehicle" required="">
-                    <option value="">Select Vehicle</option>
+                    <option value="">Select option</option>
                     <option value="Sedan">Sedan</option>
                     <option value="Suv">Suv</option>
                     <option value="Van">Van</option>
@@ -129,7 +123,7 @@
                 <div class="col-md-6">
                   <label for="roundtrip">Round Trip</label>
                   <select class="form-control" id="roundtrip" name="roundTrip" required="">
-                    <option value="">Select Option</option>
+                    <option value="">Select option</option>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                   </select>
@@ -188,7 +182,7 @@
                 <div class="col-md-6">
                   <label>Number of Passengers</label>
                   <select class="form-control" name="passengers_return">
-                    <option value="">Select</option>
+                    <option value="">Select option</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -200,7 +194,7 @@
                 <div class="col-md-6">
                   <label>Number of Bags</label>
                   <select class="form-control" name="bags_return">
-                    <option value="">Select</option>
+                    <option value="">Select option</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -212,7 +206,7 @@
                 <div class="col-md-6">
                   <label>Vehicle Type</label>
                   <select class="form-control" name="vehicle_return">
-                    <option value="">Select Vehicle</option>
+                    <option value="">Select option</option>
                     <option value="Sedan">Sedan</option>
                     <option value="Suv">Suv</option>
                     <option value="Van">Van</option>
