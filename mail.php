@@ -31,7 +31,7 @@ $vehicle_return = $_POST['vehicle_return'];
 // Desde aquí datos y cuerpo del mensaje //
 
 $asunto = "QUOTE FROM WEB";
-$correo = "verdaluno@gmail.com, contact@longislandriders.com";
+$correo = "liriders631@gmail.com, contact@longislandriders.com";
 $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 $headers .= "From: Long Island Riders <no-reply@longislandriders.com>\r\n";
