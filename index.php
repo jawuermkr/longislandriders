@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Long Island Riders</title>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <link href="style/style.css" rel="stylesheet">
+  <link href="style/style.css?v=<?php echo time(); ?>" rel="stylesheet">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -247,22 +247,30 @@
 
           <div class="jc-slide">
             <img src="img/ISP.jpg" alt="isp_airport">
-            <div class="jc-caption">MacArthur de Long Island (ISP)</div>
+            <div class="jc-caption">
+              <h4>MacArthur de Long Island (ISP)</h4>
+            </div>
           </div>
 
           <div class="jc-slide">
             <img src="img/JFK.jpg" alt="jfk_airport">
-            <div class="jc-caption">John F. Kennedy (JFK)</div>
+            <div class="jc-caption">
+              <h4>John F. Kennedy (JFK)</h4>
+            </div>
           </div>
 
           <div class="jc-slide">
             <img src="img/LGA.jpg" alt="lga_airport">
-            <div class="jc-caption">La Guardia (LGA)</div>
+            <div class="jc-caption">
+              <h4>La Guardia (LGA)</h4>
+            </div>
           </div>
 
           <div class="jc-slide">
             <img src="img/NEWARK.jpeg" alt="newark_airport">
-            <div class="jc-caption">Newark Liberty International Airport (EWR)</div>
+            <div class="jc-caption">
+              <h4>Newark Liberty International Airport (EWR)</h4>
+            </div>
           </div>
 
           <!-- Agrega o elimina slides aquí -->
@@ -273,6 +281,34 @@
         <button class="jc-nav jc-prev" aria-label="Anterior">&lt;</button>
         <button class="jc-nav jc-next" aria-label="Siguiente">&gt;</button>
       </div>
+
+      <div class="jc-carousel-2 my-5">
+        <div class="jc-carousel-track-2">
+
+          <div class="jc-slide-2">
+            <img src="img/MONTAUK.jpg" alt="montauk">
+            <div class="jc-caption-2">
+              <h4>Montauk, New York</h4>
+            </div>
+          </div>
+
+          <div class="jc-slide-2">
+            <img src="img/NYC.jpg" alt="nyc">
+            <div class="jc-caption-2">
+              <h4>NYC</h4>
+            </div>
+          </div>
+
+          <!-- Agrega o elimina slides aquí -->
+
+        </div>
+
+        <!-- Botones -->
+        <button class="jc-nav-2 jc-prev-2" aria-label="Anterior">&lt;</button>
+        <button class="jc-nav-2 jc-next-2" aria-label="Siguiente">&gt;</button>
+      </div>
+
+
     </div>
 
     <div class="pictures my-5">
@@ -303,7 +339,7 @@
     <div class="row">
       <div class="col-md-6 mt-5 text-center">
         <img src="img/LOGO-BLANCO.png" alt="logo" width="300px">
-        <p> <!--?php echo "&copy; " . date(" Y ") ?--> Long Island Riders</p>
+        <p> <?php echo "&copy; " . date(" Y ") ?> Long Island Riders</p>
       </div>
       <div class="col-md-6">
         <img src="img/paymeth.png" alt="logo" width="450px">
@@ -311,7 +347,9 @@
         <p>
           <img src="img/PHONE.png" alt="logo" width="20px"> 631-710-8692 <br>
           <img src="img/MAIL.png" alt="logo" width="20px"> contact@longislandriders.com<br>
-          <img src="img/IG.png" alt="logo" width="20px"><a href="https://www.instagram.com/longisland.riders" target="_blank"> longisland.riders </a> </p>
+          <img src="img/IG.png" alt="logo" width="20px"><a href="https://www.instagram.com/longisland.riders"
+            target="_blank"> longisland.riders </a>
+        </p>
       </div>
     </div>
   </footer>
@@ -328,6 +366,49 @@
       const slides = carousel.querySelectorAll('.jc-slide');
       const prevBtn = carousel.querySelector('.jc-prev');
       const nextBtn = carousel.querySelector('.jc-next');
+
+      let index = 0;
+      let interval;
+
+      function showSlide(i) {
+        index = (i + slides.length) % slides.length;
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      function startAutoPlay() {
+        interval = setInterval(() => {
+          showSlide(index + 1);
+        }, 3000);
+      }
+
+      function resetAutoPlay() {
+        clearInterval(interval);
+        startAutoPlay();
+      }
+
+      prevBtn.addEventListener('click', () => {
+        showSlide(index - 1);
+        resetAutoPlay();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        showSlide(index + 1);
+        resetAutoPlay();
+      });
+
+      startAutoPlay();
+    })();
+  </script>
+  <script>
+    /* ===== JAVASCRIPT AISLADO ===== */
+    (function () {
+      const carousel = document.querySelector('.jc-carousel-2');
+      if (!carousel) return;
+
+      const track = carousel.querySelector('.jc-carousel-track-2');
+      const slides = carousel.querySelectorAll('.jc-slide-2');
+      const prevBtn = carousel.querySelector('.jc-prev-2');
+      const nextBtn = carousel.querySelector('.jc-next-2');
 
       let index = 0;
       let interval;

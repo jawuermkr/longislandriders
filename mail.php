@@ -112,7 +112,7 @@ $mensaje = "
 mail($correo, $asunto, $mensaje, $headers);
 
   echo "<script>
-    alert('Thanks!');
+    alert('Thank you for submitting your request. Our team is reviewing your information, will provide your quote shortly.');
     window.location= 'index.php'
   </script>";
 

@@ -18,6 +18,7 @@ a {
 
 body {
   font-family: 'unua' !important;
+  font-size: 20px !important;
   color: #fff !important;
   min-height: 100vh;
   background-color: #202020 !important;
@@ -223,5 +224,80 @@ textarea, select {
 }
 
 .jc-carousel .jc-next {
+  right: 15px;
+}
+
+/* ===============================
+   CARRUSEL AISLADO (NO INVASIVO)
+   =============================== */
+
+.jc-carousel-2 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Track */
+.jc-carousel-2 .jc-carousel-track-2 {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Slide */
+.jc-carousel-2 .jc-slide-2 {
+  min-width: 100%;
+  text-align: center;
+}
+
+/* Imagen */
+.jc-carousel-2 .jc-slide-2 img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Descripción */
+.jc-carousel-2 .jc-caption-2 {
+  background: #ffffff;
+  color: #000000;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* ===============================
+   BOTONES 100% BLINDADOS
+   =============================== */
+
+.jc-carousel-2 .jc-nav-2 {
+  all: unset;
+  /* elimina estilos globales */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 100;
+  user-select: none;
+}
+
+.jc-carousel-2 .jc-nav-2:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Posición lateral */
+.jc-carousel-2 .jc-prev-2 {
+  left: 15px;
+}
+
+.jc-carousel-2 .jc-next-2 {
   right: 15px;
 }
