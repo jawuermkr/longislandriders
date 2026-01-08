@@ -95,7 +95,14 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="+5">+5</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                   </select>
                 </div>
                 <div class="col-md-6">
@@ -106,7 +113,15 @@
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-                    <option value="+4">+4</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                   </select>
                 </div>
 
@@ -118,6 +133,7 @@
                     <option value="Suv">Suv</option>
                     <option value="Van">Van</option>
                     <option value="L-Suv">L-Suv</option>
+                    <option value="Sprinter VAN">Sprinter VAN</option>
                   </select>
                 </div>
                 <div class="col-md-6">
@@ -187,7 +203,14 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="+5">+5</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                   </select>
                 </div>
 
@@ -199,7 +222,15 @@
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-                    <option value="+4">+4</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                   </select>
                 </div>
 
@@ -211,6 +242,7 @@
                     <option value="Suv">Suv</option>
                     <option value="Van">Van</option>
                     <option value="L-Suv">L-SUV</option>
+                    <option value="Sprinter VAN">Sprinter VAN</option>
                   </select>
                 </div>
 
@@ -283,18 +315,18 @@
       </div>
     </div>
 
-<div class="pictures my-5">
+<div class="pictures my-5 jc-carousel">
       <div class="row">
-        <div class="col-md-6">
-          <img src="img/MONTAUK.jpg" alt="montauk" width="90%">
+        <div class="col-md-12 mt-5">
+          <img src="img/NYC.jpg" alt="nyc" width="100%">
+          <div class="jc-caption-2 text-center">
+            <h4>NYC</h4>
+          </div>
+        </div>
+        <div class="col-md-12 mt-5">
+          <img src="img/MONTAUK.jpg" alt="montauk" width="100%">
           <div class="jc-caption-2 text-center">
               <h4>Montauk, New York</h4>
-            </div>
-        </div>
-        <div class="col-md-6">
-          <img src="img/NYC.jpg" alt="nyc" width="90%">
-          <div class="jc-caption-2 text-center">
-              <h4>NYC</h4>
             </div>
         </div>
       </div>
