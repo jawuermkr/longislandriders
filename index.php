@@ -248,7 +248,7 @@
           <div class="jc-slide">
             <img src="img/ISP.jpg" alt="isp_airport">
             <div class="jc-caption">
-              <h4>MacArthur de Long Island (ISP)</h4>
+              <h4>MacArthur Long Island (ISP)</h4>
             </div>
           </div>
 
@@ -281,34 +281,23 @@
         <button class="jc-nav jc-prev" aria-label="Anterior">&lt;</button>
         <button class="jc-nav jc-next" aria-label="Siguiente">&gt;</button>
       </div>
+    </div>
 
-      <div class="jc-carousel-2 my-5">
-        <div class="jc-carousel-track-2">
-
-          <div class="jc-slide-2">
-            <img src="img/MONTAUK.jpg" alt="montauk">
-            <div class="jc-caption-2">
+<div class="pictures my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/MONTAUK.jpg" alt="montauk" width="90%">
+          <div class="jc-caption-2 text-center">
               <h4>Montauk, New York</h4>
             </div>
-          </div>
-
-          <div class="jc-slide-2">
-            <img src="img/NYC.jpg" alt="nyc">
-            <div class="jc-caption-2">
+        </div>
+        <div class="col-md-6">
+          <img src="img/NYC.jpg" alt="nyc" width="90%">
+          <div class="jc-caption-2 text-center">
               <h4>NYC</h4>
             </div>
-          </div>
-
-          <!-- Agrega o elimina slides aquí -->
-
         </div>
-
-        <!-- Botones -->
-        <button class="jc-nav-2 jc-prev-2" aria-label="Anterior">&lt;</button>
-        <button class="jc-nav-2 jc-next-2" aria-label="Siguiente">&gt;</button>
       </div>
-
-
     </div>
 
     <div class="pictures my-5">
