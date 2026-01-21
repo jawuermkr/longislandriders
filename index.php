@@ -329,6 +329,12 @@
               <h4>Montauk, New York</h4>
             </div>
         </div>
+        <div class="col-md-12 mt-5">
+          <img src="img/PARO.jpg" alt="airport" width="100%">
+          <div class="jc-caption-2 text-center">
+              <h4>Travel in Style with Long Island Riders</h4>
+            </div>
+        </div>
       </div>
     </div>
 
