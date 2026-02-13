@@ -33,7 +33,7 @@ h2 {
 #jc-floating-quote-btn {
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 450px;
   transform-origin: right center;
 
   background-color: #249e2e;
@@ -52,6 +52,31 @@ h2 {
 }
 
 #jc-floating-quote-btn:hover {
+  background-color: #23c230;
+}
+
+#jc-floating-quote-btn-2 {
+  position: fixed;
+  right: 0;
+  top: 380px;
+  transform-origin: right center;
+
+  background-color: #249e2e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  cursor: pointer;
+
+  z-index: 9999;
+}
+
+#jc-floating-quote-btn-2:hover {
   background-color: #23c230;
 }
 

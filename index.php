@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="utf-8">
   <title>Long Island Riders</title>
@@ -20,8 +21,12 @@
 
 <body>
 
-  <button id="jc-floating-quote-btn" data-toggle="modal" data-target="#exampleModal" aria-label="Get a quote">
+  <button class="option-btn" data-option="QUOTE" id="jc-floating-quote-btn" data-toggle="modal" data-target="#exampleModal" aria-label="Get a quote">
     GET A QUOTE NOW
+  </button>
+  
+  <button class="option-btn" data-option="BOOKING" id="jc-floating-quote-btn-2" data-toggle="modal" data-target="#exampleModal" aria-label="Get a quote">
+    BOOKING NOW
   </button>
 
   <div class="banner">
@@ -248,7 +253,7 @@
 
 
               </div>
-              <input class="btn btnSubmit form-control" type="submit" name="btnSubmit" value="GET A QUOTE NOW">
+              <input class="btn btnSubmit form-control" type="submit" name="btnSubmit" value="GET NOW">
 
               <div class="col-md-6 mt-3" id="switch-container" style="display:none;">
                 <button type="button" id="switch-trip" class="btn btn-switch white-text">
@@ -381,6 +386,28 @@
     </div>
   </footer>
 
+
+<script>
+  /* ===== ENVIO DE DATOS SEGÚN BOTÓN ===== */
+document.querySelectorAll('.option-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        let optionValue = this.getAttribute('data-option');
+
+        fetch('mail.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: 'option=' + optionValue
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log('Sesión guardada:', data);
+        })
+        .catch(error => console.error('Error:', error));
+    });
+});
+</script>
 
 
   <script>

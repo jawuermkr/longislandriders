@@ -1,7 +1,17 @@
 <?php
 
-if(isset($_POST['btnSubmit'])){
+session_start();
 
+ if (isset($_POST['option'])) {
+    $_SESSION['option'] = $_POST['option'];
+    echo "OK";
+
+    }
+    
+if(isset($_POST['btnSubmit'])){
+      
+$option = $_SESSION['option'];
+      
 $service = $_POST['service'];
 $pickup = $_POST['pickup'];
 $dropoff = $_POST['dropoff'];
@@ -30,8 +40,9 @@ $vehicle_return = $_POST['vehicle_return'];
 
 // Desde aquí datos y cuerpo del mensaje //
 
-$asunto = "QUOTE FROM WEB";
+$asunto = $option . " FROM WEB";
 $correo = "liriders631@gmail.com, contact@longislandriders.com";
+//$correo = "verdaluno@gmail.com";
 $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 $headers .= "From: Long Island Riders <no-reply@longislandriders.com>\r\n";
@@ -54,7 +65,7 @@ $mensaje = "
           <!-- Header -->
           <tr>
             <td style='background-color:#111827; color:#ffffff; padding:20px; text-align:center;'>
-              <h2 style='margin:0; font-size:22px;'>NEW QUOTE FROM THE WEB</h2>
+              <h2 style='margin:0; font-size:22px;'>NEW <b> $option </b> FROM THE WEB</h2>
             </td>
           </tr>
 
@@ -112,9 +123,9 @@ $mensaje = "
 mail($correo, $asunto, $mensaje, $headers);
 
   echo "<script>
-    alert('Thank you for submitting your request. Our team is reviewing your information, will provide your quote shortly.');
+    alert('Thank you for submitting your request. Our team is reviewing your information, will provide your " . $_SESSION['option'] . " shortly.');
     window.location= 'index.php'
-  </script>";
+  </script>"  ;
 
 }
 
