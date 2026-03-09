@@ -248,7 +248,7 @@
 
 
               </div>
-              <input class="btn btnSubmit form-control" type="submit" name="btnSubmit" value="GET A QUOTE NOW">
+              <input class="btn btnSubmit form-control my-3" type="submit" name="btnSubmit" value="GET A QUOTE NOW">
               <input class="btn btnSubmit form-control" type="submit" name="btnBook" value="BOOK ONLINE">
 
               <div class="col-md-6 mt-3" id="switch-container" style="display:none;">
