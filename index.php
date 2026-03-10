@@ -145,6 +145,11 @@
                   </select>
                 </div>
 
+                <div class="col-md-12">
+                  <label>More Details</label>
+                  <textarea class="form-control" type="text" name="details"></textarea>
+                </div>
+
 
               </div>
               <div class="row mt-4" id="trip-two" style="display:none;">
@@ -197,7 +202,7 @@
 
                 <div class="col-md-6">
                   <label>Number of Passengers</label>
-                  <select class="form-control" name="passengers_return">
+                  <select class="form-control" name="pasagers_return">
                     <option value="">Select option</option>
                     <option value="1">1</option>
                     <option value="2">2</option>

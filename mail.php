@@ -13,6 +13,7 @@ $mail = $_POST['mail'];
 $pasagers = $_POST['pasagers']; 
 $bags = $_POST['bags'];
 $vehicle = $_POST['vehicle'];
+$details = $_POST['details'];
 
 $roundTrip = $_POST['roundTrip'];
 
@@ -72,6 +73,7 @@ $mensaje = "
 <p><strong>Number of passegers: </strong> $pasagers</p>
 <p><strong>Number of bags: </strong> $bags</p>
 <p><strong>Vehicle Type: </strong> $vehicle</p>
+<p><strong>More Details: </strong> $details</p>
 <hr>
 <p><strong>roundTrip: </strong> $roundTrip</p>
 ";
@@ -140,6 +142,7 @@ $mail = $_POST['mail'];
 $pasagers = $_POST['pasagers']; 
 $bags = $_POST['bags'];
 $vehicle = $_POST['vehicle'];
+$details = $_POST['details'];
 
 $roundTrip = $_POST['roundTrip'];
 
@@ -159,6 +162,7 @@ $vehicle_return = $_POST['vehicle_return'];
 
 $asunto = "BOOKING FROM WEB";
 $correo = "liriders631@gmail.com, contact@longislandriders.com";
+// $correo = "verdaluno@gmail.com"; //
 $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 $headers .= "From: Long Island Riders <no-reply@longislandriders.com>\r\n";
@@ -198,6 +202,7 @@ $mensaje = "
 <p><strong>Number of passegers: </strong> $pasagers</p>
 <p><strong>Number of bags: </strong> $bags</p>
 <p><strong>Vehicle Type: </strong> $vehicle</p>
+<p><strong>More Details: </strong> $details</p>
 <hr>
 <p><strong>roundTrip: </strong> $roundTrip</p>
 ";
